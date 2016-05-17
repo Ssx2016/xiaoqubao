@@ -18,7 +18,9 @@ function telescopic() {
 	$('.select').parents('ul').parent('div').css({
 		'height' : $('.select').parents('ul').height() + oldHeight
 	})
-	arr.splice(selParent, 1, 'false');
+	if (selParent != -1) {
+		arr.splice(selParent, 1, 'false');
+	}
 	$('.common-tit div').children('h2').click(function(){
 		var liLength = $(this).siblings('ul').height(),
 			thisNum = $(this).parent().index();
