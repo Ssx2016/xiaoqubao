@@ -7,31 +7,27 @@ for(var i = 0; i < lenNav; i++) {
 }
 
 // 二级标题栏伸缩
-var jundgeValue1 = true,
-	jundgeValue2 = true,
-	jundgeValue3 = true,
-	jundgeValue4 = true,
-	jundgeValue5 = true,
-	jundgeValue6 = true;
-function changeTit(ele, changeEle, jundgeValue) {
-	$(ele).on('click', function() {
-		var len = $(this).siblings('ul').children().length + 1;
-		if(jundgeValue == true) {				
-			$(changeEle).stop(true).animate({
-				'height' : 35 * len + 'px'
+function telescopic() {
+	var arr = [],
+		comLenth = $('.common-tit').children('div').length,
+		oldHeight = $('.common-tit').children('div').height();
+	for (var i = 0; i < comLenth; i++) {
+		arr.push('true');
+	}
+	$('.common-tit div').children('h2').click(function(){
+		var liLength = $(this).siblings('ul').height(),
+			thisNum = $(this).parent().index();
+		if (arr[thisNum] == 'true') {
+			$(this).parent().stop(true).animate({
+				'height' : liLength + $(this).height()
 			})
-			jundgeValue = false;
+			arr.splice(thisNum, 1, 'false');
 		} else {
-			$(changeEle).stop(true).animate({
-				'height' : '35px'
+			$(this).parent().stop(true).animate({
+				'height' : oldHeight
 			})
-			jundgeValue = true;
+			arr.splice(thisNum, 1, 'true');
 		}
-	})	
+	})
 }
-changeTit('.home-manage h2', '.home-manage', jundgeValue1);
-changeTit('.ad-manage h2', '.ad-manage', jundgeValue2);
-changeTit('.square-manage h2', '.square-manage', jundgeValue3);
-changeTit('.admin-account h2', '.admin-account', jundgeValue4);
-changeTit('.news-delay h2', '.news-delay', jundgeValue5);
-changeTit('.seting h2', '.seting', jundgeValue6);
+telescopic();
