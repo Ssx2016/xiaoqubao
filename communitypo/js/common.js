@@ -10,10 +10,15 @@ for(var i = 0; i < lenNav; i++) {
 function telescopic() {
 	var arr = [],
 		comLenth = $('.common-tit').children('div').length,
-		oldHeight = $('.common-tit').children('div').height();
+		oldHeight = $('.common-tit').children('div').height(),
+		selParent = $('.select').parents('ul').parent('div').index();
 	for (var i = 0; i < comLenth; i++) {
 		arr.push('true');
 	}
+	$('.select').parents('ul').parent('div').css({
+		'height' : $('.select').parents('ul').height() + oldHeight
+	})
+	arr.splice(selParent, 1, 'false');
 	$('.common-tit div').children('h2').click(function(){
 		var liLength = $(this).siblings('ul').height(),
 			thisNum = $(this).parent().index();

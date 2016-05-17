@@ -27,7 +27,6 @@
 	width: 1016px;
 	border-left: 1px solid #dcdcdc;
 }
-
 /*二级布局*/
 /*顶部的布局*/
 .common-topcon {
@@ -60,6 +59,7 @@
 	display: block;
 	width: 66px;
 	height: 40px;
+	color: #222;
 	cursor: pointer;
 }
 .common-topcon li {
@@ -80,22 +80,25 @@
 	background: url("../images/nav.png") -132px 2px no-repeat;
 }
 .common-topcon .com-order a:hover {
+	color: #39f;
 	background: url("../images/nav.png") 17px -45px no-repeat;
 }
 .common-topcon .com-merchant a:hover {
+	color: #39f;
 	background: url("../images/nav.png") -34px -44px no-repeat;
 }
 .common-topcon .com-topic a:hover {
+	color: #39f;
 	background: url("../images/nav.png") -83px -44px no-repeat;
 }
 .common-topcon .com-adduser a:hover {
+	color: #39f;
 	background: url("../images/nav.png") -132px -44px no-repeat;
 }
 .common-topcon li h2 {
 	float: bottom;
 	height: 12px;
 	padding-top: 28px;
-	color: #222;
 	line-height: 12px;
 	font-size: 12px;
 }
@@ -112,8 +115,12 @@
 	color: #fff;
 	line-height: 20px;
 }
+.username span {
+	color: #292f35;
+	font-size: 18px;
+}
 .username .back-index {
-	color: #f00;
+	font-size: 16px;
 }
 .username .back-index:hover {
 	color: #39f;
@@ -151,7 +158,8 @@
 	padding-bottom: 8px;
 }
 .back-home a {
-	background: url("../images/bgtit.png") 30px -203px no-repeat;
+	color: #b2b2b2;
+	background: url("../images/bgtit.png") 30px 7px no-repeat;
 }
 .common-tit .select {
 	background-color: #2ed771;
@@ -168,7 +176,6 @@
 .common-tit .seting {
 	border-bottom: 0;
 }
-
 /*底部版权*/
 .common-bot h3 {
 	text-align: center;
