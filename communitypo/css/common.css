@@ -1,0 +1,177 @@
+@charset 'utf-8';
+/*一级布局设置*/
+.common-wrap, .common-top, .common-bot {
+	min-width: 1200px;
+	background-color: #eee;
+}
+.common-topcon, .common-mid, .common-bot h3 {
+	width: 1200px;
+	margin: 0 auto;
+}
+.common-top, .common-mid {
+	background-color: #fff;
+}
+.common-mid {
+	margin-top: 40px;
+}
+.common-tit, .common-tailcon {
+	float: left;
+	width: 183px;
+	height: 1180px;
+}
+.common-tit {
+	height: 1120px;
+	padding: 30px 0;
+}
+.common-tailcon {
+	width: 1016px;
+	border-left: 1px solid #dcdcdc;
+}
+
+/*二级布局*/
+/*顶部的布局*/
+.common-topcon {
+	width: 1120px;
+	height: 40px;
+	padding: 19px 38px 19px 42px;
+}
+.common-topcon .logo, .common-topcon ul, .common-topcon .username {
+	float: left;
+	height: 40px;
+	line-height: 40px;	
+}
+.logo {
+	margin-right: 60px;
+}
+.logo a, .logo img {
+	float: left;
+	width: 40px;
+	height: 40px;
+}
+.logo span {
+	margin-left: 8px;
+	color: #666;
+	font-size: 22px;
+}
+.common-topcon .username {
+	float: right;
+}
+.common-topcon li a {
+	display: block;
+	width: 66px;
+	height: 40px;
+	cursor: pointer;
+}
+.common-topcon li {
+	float: left;
+	position: relative;
+	width: 66px;
+	height: 40px;
+	background: url("../images/nav.png") 17px 2px no-repeat;
+	text-align: center;
+}
+.common-topcon .com-merchant {
+	background: url("../images/nav.png") -34px 2px no-repeat;
+}
+.common-topcon .com-topic {
+	background: url("../images/nav.png") -83px 2px no-repeat;
+}
+.common-topcon .com-adduser {
+	background: url("../images/nav.png") -132px 2px no-repeat;
+}
+.common-topcon .com-order a:hover {
+	background: url("../images/nav.png") 17px -45px no-repeat;
+}
+.common-topcon .com-merchant a:hover {
+	background: url("../images/nav.png") -34px -44px no-repeat;
+}
+.common-topcon .com-topic a:hover {
+	background: url("../images/nav.png") -83px -44px no-repeat;
+}
+.common-topcon .com-adduser a:hover {
+	background: url("../images/nav.png") -132px -44px no-repeat;
+}
+.common-topcon li h2 {
+	float: bottom;
+	height: 12px;
+	padding-top: 28px;
+	color: #222;
+	line-height: 12px;
+	font-size: 12px;
+}
+.common-topcon li span {
+	display: block;
+	position: absolute;
+	left: 35px;
+	top: -10px;
+	width: 20px;
+	height: 20px;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+	color: #fff;
+	line-height: 20px;
+}
+.username .back-index {
+	color: #f00;
+}
+.username .back-index:hover {
+	color: #39f;
+}
+/*选择栏*/
+.common-tit div {
+	overflow: hidden;
+	height: 35px;
+	border-bottom: 1px solid #dcdcdc;
+	font-size: 12px;
+	text-indent: 60px;
+	line-height: 35px;
+}
+.common-tit h2 {
+	color: #b2b2b2;
+	background: url("../images/bgtit.png") 30px -19px no-repeat;
+	cursor: pointer;
+}
+.ad-manage h2 {
+	background: url("../images/bgtit.png") 30px -49px no-repeat;
+}
+.square-manage h2 {
+	background: url("../images/bgtit.png") 30px -79px no-repeat;
+}
+.admin-account h2 {
+	background: url("../images/bgtit.png") 30px -110px no-repeat;
+}
+.news-delay h2 {
+	background: url("../images/bgtit.png") 30px -141px no-repeat;
+}
+.seting h2 {
+	background: url("../images/bgtit.png") 30px -175px no-repeat;
+}
+.back-home {
+	padding-bottom: 8px;
+}
+.back-home a {
+	background: url("../images/bgtit.png") 30px -203px no-repeat;
+}
+.common-tit .select {
+	background-color: #2ed771;
+	color: #fff;
+}
+.common-tit a {
+	display: block;
+	width: 183px;
+	height: 35px;
+}
+.common-tit a:hover {
+	background-color: #eee;
+}
+.common-tit .seting {
+	border-bottom: 0;
+}
+
+/*底部版权*/
+.common-bot h3 {
+	text-align: center;
+	line-height: 66px;
+	word-spacing: 10px;
+}

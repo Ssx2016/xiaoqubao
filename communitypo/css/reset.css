@@ -4,7 +4,7 @@ html{color:#3a424a;background:#FFF;font-family:'Microsoft YaHei';font-size: 14px
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,form,input,button,textarea,p,th,td,strong{padding:0;margin:0;font-family:'Microsoft YaHei';}
 table{border-collapse:collapse;border-spacing:0;}
 img{border:0;}
-a{text-decoration:none; color:; outline:none;}/*此处待添加默认链接颜色*/
+a{text-decoration:none; color:#3f3f3f; outline:none;}/*此处待添加默认链接颜色*/
 a:hover{color: ; background:#eee;}
 var,em,strong{font-style:normal;}
 em,strong,th,var{font-style:inherit;font-weight:inherit;}
