@@ -5,13 +5,15 @@ var lenNav = spanNav.length;
 for(var i = 0; i < lenNav; i++) {
 	spanNav[i].style.backgroundColor = arrNav[i];
 }
-
 // 二级标题栏伸缩
 function telescopic() {
 	var arr = [],
 		comLenth = $('.common-tit').children('div').length,
 		oldHeight = $('.common-tit').children('div').height(),
 		selParent = $('.select').parents('ul').parent('div').index();
+	$('.common-tit').css({
+		'min-height' : $('.common-tailcon').height()
+	})
 	for (var i = 0; i < comLenth; i++) {
 		arr.push('true');
 	}

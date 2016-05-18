@@ -17,15 +17,14 @@
 .common-tit, .common-tailcon {
 	float: left;
 	width: 183px;
-	min-height: 600px;
 }
 .common-tit {
-/*	height: 1120px;*/
 	padding: 30px 0;
 	border-right: 1px solid #dcdcdc;
 }
 .common-tailcon {
 	width: 1016px;
+	min-height: 600px;
 }
 /*二级布局*/
 /*顶部的布局*/
