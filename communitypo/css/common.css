@@ -176,8 +176,10 @@
 	border-bottom: 0;
 }
 /*底部版权*/
+.common-bot {
+	padding: 17px 0;
+}
 .common-bot h3 {
 	text-align: center;
-	line-height: 66px;
 	word-spacing: 10px;
 }
