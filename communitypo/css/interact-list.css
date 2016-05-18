@@ -1,0 +1,180 @@
+@charset "UTF-8";
+/* 搜索信息模块 */
+.search-model {
+	width: 838px;
+	height: 106px;
+	margin: 56px auto 14px;
+	padding: 25px 0 0 40px;
+	border: 1px solid #e1e1e1;
+}
+/* 选择城市 */
+.city div {
+	float: left;
+	margin: 0 34px 16px 0;
+}
+.choose {
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	width:142px;
+	height:28px;
+	padding-left: 6px;
+	border:1px solid #ccc;
+	color:#999;
+	background:url("../images/liandong.png") right center no-repeat;
+}
+/* 发布时间 */
+.release-time div {
+	float: left;
+	margin-right: 71px;
+}
+.release-time input {
+	width: 196px;
+	height: 28px;
+	line-height: 28px;
+}
+/* 搜索按钮 */
+.btn-search {
+	float: right;
+	width: 100px;
+	height: 29px;
+	margin-right: 65px;
+	border: 0;
+	color: #fff;
+	background: #2ed771;
+	cursor: pointer;
+}
+.search-list {
+	position: relative;
+}
+/* 互动页列表信息 */
+.search-list table {
+	width: 882px;
+	height: 706px;
+	margin: 77px auto 0;
+	border: 1px solid #e1e1e1;
+	text-align: center;
+}
+/* 列表 */
+.search-list table th {
+	border-right: 1px solid #e1e1e1;
+	text-align: center;
+	line-height: 39px;
+}
+.search-list table td {
+	border: 1px solid #e1e1e1;
+}
+.search-list table img {
+	display: block;
+	width: 60px;
+	height: 59px;
+	margin: 17px auto;
+}
+/* 下载、删除按钮 */
+.list-operate {
+	width: 101px;
+	margin: 0 auto;
+}
+.download {
+	float: left;
+	position: relative;
+	width: 50px;
+	height: 17px;
+	background: url("../images/download-1.png") center 0 no-repeat;
+	cursor: pointer;
+}
+.download div, .list-del div {
+	display: none;
+	position: absolute;
+	left: 0;
+	width: 50px;
+	height: 28px;
+	line-height: 22px;
+	color: #fff;
+	background: url("../images/app-del.png") 0 0 no-repeat;
+	cursor: pointer;
+}
+.download div {
+	bottom: 26px;
+}
+.list-del div {
+	bottom: 30px;
+}
+.list-del {
+	float: right;
+	position: relative;
+	width: 50px;
+	height: 21px;
+	background: url("../images/listdel-1.png") center 0 no-repeat;
+	cursor: pointer;
+}
+/* 删除确认框 */
+.del-check {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 82px;
+	width: 243px;
+	height: 128px;
+	padding-left: 21px;
+	background: url("../images/del-check.png") 0 0 no-repeat;
+}
+.del-check span {
+	float: left;
+	overflow: hidden;
+	width: 199px;
+	height: 14px;
+	margin: 35px 0 24px 0 ;
+	color: #6a6868;
+	line-height: 14px;
+}
+.del-check div {
+	float: left;
+	width: 89px;
+	height: 28px;
+	margin-right: 19px;
+	border: 1px solid #b4b4b4;
+	color: #6a6868;
+	text-align: center;
+	line-height: 28px;
+	cursor: pointer;
+}
+/* 跳转页面 */
+.page-num {
+	float: right;
+	display: inline;
+	width: 230px;
+	height: 30px;
+	margin: 18px 65px 0 0;
+	color: #292f35;
+	line-height: 30px;
+	font-size: 16px;
+}
+/* 下一页 */
+.next-page {
+	float: left;
+	width: 68px;
+	height: 30px;
+	margin-right: 10px;
+	padding-left: 10px;
+	background: url("../images/nextpage.png") right 0 no-repeat;
+}
+/* 跳转 */
+.Jump-page {
+	float: left;
+	width: 142px;
+}
+.Jump-page input {
+	float: left;
+	width: 76px;
+	height: 26px;
+}
+.Jump-page div {
+	float: left;
+	width: 52px;
+	height: 28px;
+	margin-left: 8px;
+	border: 1px solid #e1e1e1;
+	text-align: center;
+	cursor: pointer;
+}
