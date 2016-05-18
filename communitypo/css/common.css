@@ -22,10 +22,10 @@
 .common-tit {
 /*	height: 1120px;*/
 	padding: 30px 0;
+	border-right: 1px solid #dcdcdc;
 }
 .common-tailcon {
 	width: 1016px;
-	border-left: 1px solid #dcdcdc;
 }
 /*二级布局*/
 /*顶部的布局*/
