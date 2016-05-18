@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>小区宝-登录</title>
+	<link rel="stylesheet" href="../css/reset.css" type="text/css">
+	<style type="text/css">		
+		.wrap {
+			min-width: 1200px;
+			background: #fff;
+		}
+		.big-pic {
+			min-width: 1200px;
+			background: #38d7b0;
+		}
+		.pic-con {	
+			width: 1200px;
+			height: 700px;
+			margin: 0 auto;
+		}
+		.head {
+			width: 1140px;
+			height: 56px;
+			margin: 0 auto;
+			padding: 10px 60px 10px 0;
+		}
+		.logo {
+			float: left;
+			width: 230px;
+		}
+		.logo dt {
+			float: left;
+			width: 56px;
+			height: 56px;
+			margin-right: 20px;
+			padding-left: 16px;
+		}
+		.logo dt a {
+			display: block;
+		}
+		.logo dt img {
+			display: block;
+			width: 56px;
+			height: 56px;
+		}
+		.logo h2 {
+			height: 34px;
+			color: #363636;
+			line-height: 34px;
+			font-size: 30px;
+		}
+		.logo p {
+			height: 16px;
+			color: #363636;
+		}
+		.logo dd {
+			float: left;
+			width: 132px;
+		}
+		.index-nav {
+			float: right;
+			height: 19px;
+			overflow: hidden;
+			padding: 36px 0 0 0;
+		}
+		.index-nav a {
+			float: left;
+			display: block;
+			height: 30px;
+			margin-left: 40px;
+		}
+		.index-nav span {
+			color: #000;
+		}
+		.index-nav a:hover span {
+			color: #ccc;
+		}
+		.pic-con {
+			position: relative;
+			background: url('../images/loadbg_03.png') 50px 75px no-repeat no-repeat;
+		}
+		.landing, .scan-code {
+			position: absolute;
+			right: 60px;
+			display: inline;
+			background: #fff;
+			border: 1px solid #b3b3b3;	
+		}
+		.landing {
+			top: 80px;
+			width: 296px;
+			height: 288px;
+		}
+		.landing dl dt, .landing dl dd {
+			float: left;
+		}
+		.landing dl dt {
+			display: inline;
+			width: 25px;
+			height: 25px;
+			margin: 8px 8px 0 90px;
+			line-height: 25px;
+		}
+		.landing dl img {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		.landing dl {
+			height: 44px;
+			border-bottom: 1px solid #bbb;
+			color: #363636;
+			text-align: center;
+			line-height: 44px;
+			font-size: 16px;
+		}
+		.landing form {
+			margin-top: 28px;
+			padding-right: 34px;
+			color: #363636;
+		}
+		.landing form div {
+			float: right;
+			height: 32px;
+			width: 240px;
+			margin-bottom: 15px;
+			line-height: 32px;
+			font-size: 16px;
+			letter-spacing: 3px;
+		}
+		.landing div label {
+			float: right;
+		}
+		.landing form input {
+			float: right;
+			width: 160px;
+			height: 28px;
+			line-height: 28;
+			font-size: 12px;
+		}
+		.landing .button {
+			width: 226px;
+			height: 38px;
+			margin: 52px 34px 8px 34px;
+			background: #21d771;
+			color: #fff;
+			font-size: 18px;
+			border: 0;
+			-mo-border-radius: 7px;
+			-moz-border-radius: 7px;
+			border-radius: 7px;
+		}
+		.landing .button:hover {
+			background: #20ed71;
+		}
+		.landing p {
+			display: none;
+			color: #f00;
+			text-align: center;
+			font-size: 12px;
+		}
+		.pic-change {
+			position: absolute;
+			top: 642px;
+			right: 60px;
+			width: 100px;
+		}
+		.pic-change span {
+			float: right;
+			display: block;
+			margin-left: 13px;
+			width: 29px;
+			height: 29px;
+			border-radius: 50%;
+			cursor: pointer;
+		}
+		.pic-left {
+			background: url('../images/index-right_05.png');
+			opacity: 0.5;
+			filter:alpha(opacity = 50);
+		}
+		.pic-right {
+			background: url('../images/index-left_03.png');
+			opacity: 0.5;
+			filter:alpha(opacity = 50);
+		}
+		.pic-change span:hover {
+			opacity: 1;
+			filter:alpha(opacity = 100);
+		}
+		.copyright {
+			padding-bottom: 10px;
+		}
+		.scan-code {
+			top: 380px;
+			width: 296px;
+			height: 206px;
+			padding-top: 20px;
+		}
+		.scan-code img {
+			display: block;
+			width: 158px;
+			height: 158px;
+			margin: 0 auto;
+		}
+		.scan-code p {
+			margin-top: 8px;
+			text-align: center;
+		}
+		.cop-con {
+			width: 1200px;
+			margin: 0 auto;
+		}
+		.copyright h3 {
+			margin-top: 18px;
+			text-align: center;
+
+		}
+		.copyright span {
+			margin-right: 20px;
+			color: #363636;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="head clearfix">
+			<dl class="logo">
+				<dt>
+					<a href="" title="logo">
+						<img src="../images/logo.png" alt="logo">
+					</a>
+				</dt>
+				<dd>
+					<h2>小区宝</h2>
+					<p>社区服务O2O平台</p>
+				</dd>
+			</dl>
+			<div class="index-nav clearfix">
+				<a href="" title="小区宝官网"><span>小区宝官网</span></a>
+				<a href="" title="胖吴货栈官网"><span>胖吴货栈官网</span></a>
+				<a href="" title="关于我们"><span>关于我们</span></a>
+				<a href="" title="帮助"><span>帮助</span></a>	
+			</div>
+		</div>
+		<div class="big-pic">
+			<div class="pic-con clearfix">
+				<!-- <img src="../images/big-oic_02.png" alt=""> -->
+				<div class="landing">
+					<dl class="clearfix">
+						<dt>
+							<img src="../images/logo.png" alt="logo" title="logo">
+						</dt>
+						<dd>小区宝后台</dd>
+					</dl>							
+					<form action="">
+						<div>
+							<input type="text" id="username"><label for="username">用户名：</label>
+						</div>
+						<div>
+							<input type="password" id="password"><label for="password">密码：</label>
+						</div>
+					</form>	
+					<input type="button" value="登录" class="button">
+					<p>账号/密码错误，请联系管理员</p>
+				</div>
+				<div class="scan-code">
+					<img src="..//images/loadbg_06.png" title="微信二维码" alt="微信二维码">
+					<p>扫二维码，下载小区宝</p>
+				</div>
+				<div class="pic-change clearfix">
+					<span class="pic-left"></span>
+					<span class="pic-right"></span>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="cop-con">				
+				<h3>
+					<span>深圳市小区宝网络技术有限公司</span>
+					<span>版权所有</span>
+				</h3>
+			</div>
+		</div>
+	</div>
+	<script src="../js/jquery-1.12.3.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	    //假用户名密码实现页面跳转
+	    $('.button').click(function() {
+	    	var username = $('#username').val();
+	    	var password = $('#password').val();
+	    	if (username == 'a27922780' && password == '123456') {
+	    		window.location.href = 'bg-page.html';
+	    	} else {
+	    		$('.landing p').css({
+	    			'display' : 'block'
+	    		})
+	    	}
+	    })
+</script>
+</body>
+</html>

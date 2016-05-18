@@ -38,3 +38,7 @@ function telescopic() {
 	})
 }
 telescopic();
+//点击退出返回登录页
+$('.back-index').click(function(){
+	window.location.href = 'landing.html';
+})
