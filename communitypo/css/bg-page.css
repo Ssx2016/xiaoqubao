@@ -1,0 +1,61 @@
+@charset 'utf-8';
+/*标题栏起始tit背景图*/
+.back-home a {
+	background: url("../images/bgtit.png") 30px -202px no-repeat;
+	color: #b2b2b2;
+}
+/*内容框common-tailcon*/
+.common-tailcon {
+	width: 875px;
+	height: 1155px;
+	padding: 25px 60px 0 75px;
+}
+.common-tailcon h2 {
+	height: 92px;
+	margin-bottom: 40px;
+	background: #f7f7f7 url("../images/bgpage.png") 194px 30px no-repeat;
+	text-indent: 240px;
+	color: #292f35;
+	font-size: 28px;
+	line-height: 92px;
+}
+.common-tailcon li {
+	overflow: hidden;
+	height: 62px;
+	margin-bottom: 10px;
+	border-left: 10px;
+	background-color: #eb6100;
+}
+.common-tailcon li a {
+	float: right;
+	width: 99.1%;
+	height: 100%;
+	color: #292f35;
+	font-size: 16px;
+	line-height: 62px;
+	text-indent: 48px;
+}
+.common-tailcon li a:hover {
+	background-color: #f1f1f1;
+}
+.common-tailcon .order-form a {
+	background: #f7f7f7 url("../images/bgpage.png") 820px -92px no-repeat;	
+}
+.common-tailcon .merchant {
+	background-color: #f00;
+}
+.common-tailcon .merchant a {
+	background: #f7f7f7 url("../images/bgpage.png") 820px -163px no-repeat;
+}
+.common-tailcon .topic {
+	background-color: #00b7ee;
+}
+.common-tailcon .topic a {
+	background: #f7f7f7 url("../images/bgpage.png") 820px -230px no-repeat;
+}
+.common-tailcon .adduser {
+	background-color: #32b16c;
+}
+.common-tailcon .adduser a {
+	background: #f7f7f7 url("../images/bgpage.png") 820px -300px no-repeat;
+}
