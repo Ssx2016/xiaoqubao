@@ -226,3 +226,24 @@
 	height:28px;
 	color:#999999;
 }
+/* 隐藏页面的标题 */
+.common-hidtit {
+	width: 860px;
+	height: 49px;
+	padding: 0 20px;
+	background: #2ed771;
+}
+.common-hidtit h3 {
+	float: left;
+	line-height: 49px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+}
+.common-hidtit div {
+	float: right;
+	width: 50px;
+	height: 49px;
+	background: url("../images/app-out.png") right center no-repeat;
+	cursor: pointer;
+}
