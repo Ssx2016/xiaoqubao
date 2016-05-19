@@ -16,15 +16,16 @@
 }
 .common-tit, .common-tailcon {
 	float: left;
-	width: 183px;
+	width: 184px;
+	min-height: 600px;
 }
 .common-tit {
 	padding: 30px 0;
 	border-right: 1px solid #dcdcdc;
 }
 .common-tailcon {
-	width: 1016px;
-	min-height: 600px;
+	width: 880px;
+	padding: 50px 65px 50px 70px;
 }
 /*二级布局*/
 /*顶部的布局*/
@@ -122,7 +123,8 @@
 	font-size: 16px;
 }
 .username .back-index:hover {
-	color: #39f;
+	color: #f00;
+	background-color: #fff;
 }
 /*选择栏*/
 .common-tit div {
@@ -166,7 +168,7 @@
 }
 .common-tit a {
 	display: block;
-	width: 183px;
+	width: 184px;
 	height: 35px;
 }
 .common-tit a:hover {
@@ -182,4 +184,45 @@
 .common-bot h3 {
 	text-align: center;
 	word-spacing: 10px;
+}
+
+/*二级布局公共样式*/
+/*等同按钮存为公共按钮*/
+.common-btn {
+	float: right;
+	width: 115px;
+	height: 28px;
+	margin: 11px 0 0;
+	color: #fff;
+	background: #2ed771;
+	text-align: center;
+	line-height: 28px;
+	font-size: 14px;
+	-webkit-box-shadow: #c2c2c2 0px 0px 2px 2px;
+	-moz-box-shadow: #c2c2c2 0px 0px 2px 2px;
+	box-shadow: #c2c2c2 0px 0px 2px 2px;
+	cursor: pointer;
+}
+/*三级联动提取公共样式*/
+.common-city {
+	width: 874px;
+	height: 95px;
+	padding-top: 35px;
+	border: 1px solid #ddd;
+}
+.common-city div {
+	float: left;
+	width: 232px;
+	height: 30px;
+	padding-left: 40px;
+}
+.common-choose {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	padding-left: 6px;
+	background:url("../images/liandong.png")  no-repeat right center;
+	width:142px;
+	height:28px;
+	color:#999999;
 }

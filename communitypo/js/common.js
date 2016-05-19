@@ -12,7 +12,7 @@ function telescopic() {
 		oldHeight = $('.common-tit').children('div').height(),
 		selParent = $('.select').parents('ul').parent('div').index();
 	$('.common-tit').css({
-		'min-height' : $('.common-tailcon').height()
+		'min-height' : $('.common-tailcon').outerHeight() - 60
 	})
 	for (var i = 0; i < comLenth; i++) {
 		arr.push('true');
@@ -43,4 +43,15 @@ telescopic();
 //点击退出返回登录页
 $('.back-index').click(function(){
 	window.location.href = 'landing.html';
+})
+
+// 公共按钮的hover效果
+$('.common-btn').hover(function() {
+	$(this).css({
+		'background' : '#27c164'
+	})
+}, function() {
+	$(this).css({
+		'background' : '#2ed771'
+	})
 })

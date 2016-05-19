@@ -3,7 +3,7 @@
 .search-model {
 	width: 838px;
 	height: 106px;
-	margin: 56px auto 14px;
+	margin: 0 0 14px;
 	padding: 25px 0 0 40px;
 	border: 1px solid #e1e1e1;
 }
@@ -34,15 +34,9 @@
 	line-height: 28px;
 }
 /* 搜索按钮 */
-.btn-search {
-	float: right;
+.common-btn {
 	width: 100px;
-	height: 29px;
-	margin-right: 65px;
 	border: 0;
-	color: #fff;
-	background: #2ed771;
-	cursor: pointer;
 }
 .search-list {
 	position: relative;
@@ -145,7 +139,7 @@
 	display: inline;
 	width: 230px;
 	height: 30px;
-	margin: 18px 65px 0 0;
+	margin: 18px 0 0 0;
 	color: #292f35;
 	line-height: 30px;
 	font-size: 16px;
