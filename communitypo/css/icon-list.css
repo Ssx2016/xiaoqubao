@@ -1,10 +1,10 @@
 @charset "UTF-8";
 /* 搜索信息模块 */
-.search-model {
-	width: 838px;
-	height: 106px;
-	margin-bottom: 14px;
-	padding: 25px 0 0 40px;
+.icon-search {
+	width: 819px;
+	height: 102px;
+	margin-bottom: 12px;
+	padding: 29px 0 0 59px;
 	border: 1px solid #e1e1e1;
 }
 /* 选择城市 */
@@ -23,14 +23,17 @@
 	color:#999;
 	background:url("../images/liandong.png") right center no-repeat;
 }
-/* 发布时间 */
-.release-time div {
+/* ICON标题 */
+.icontit {
+	margin-left: -11px;
+}
+.icontit div {
 	float: left;
 	margin-right: 71px;
 }
-.release-time input {
+.icontit input {
 	width: 196px;
-	height: 28px;
+	height: 26px;
 	line-height: 28px;
 }
 /* 搜索按钮 */
@@ -38,7 +41,10 @@
 	width: 100px;
 	margin-top: 0;
 }
-/* 互动页列表信息 */
+/* 便民ICON列表信息 */
+.search-list {
+	position: relative;
+}
 .search-list table {
 	width: 880px;
 	height: 706px;
@@ -62,9 +68,9 @@
 	height: 59px;
 	margin: 17px auto;
 }
-/* 下载、删除按钮 */
+/* 下载、删除、详情按钮 */
 .list-operate {
-	width: 69px;
+	width: 123px;
 	height: 21px;
 	margin: 0 auto;
 }
@@ -73,36 +79,48 @@
 	position: relative;
 	width: 19px;
 	height: 21px;
-	background: url("../images/download-1.png") center center no-repeat;
+	margin-right: 34px;
+	background: url("../images/download-1.png") 0 center no-repeat;
 	cursor: pointer;
 }
 .list-del {
-	float: right;
+	float: left;
 	position: relative;
 	width: 16px;
 	height: 21px;
-	background: url("../images/listdel-1.png") center center no-repeat;
+	margin-right: 32px;
+	background: url("../images/listdel-1.png") center 0 no-repeat;
 	cursor: pointer;
 }
-.download div, .list-del div {
+.list-icon {
+	float: left;
+	position: relative;
+	width: 21px;
+	height: 21px;
+	background: url("../images/listicon-1.png") 0 center no-repeat;
+	cursor: pointer;
+}
+/* 按钮悬停样式 */
+.download div, .list-del div, .list-icon div {
 	display: none;
 	position: absolute;
 	left: 0;
 	bottom: 28px;
 	width: 50px;
 	height: 28px;
+	margin-left: -15px;
 	line-height: 22px;
 	color: #fff;
-	background: url("../images/app-del.png") center center no-repeat;
-	cursor: pointer;
-}
-.download div {
-	margin-left: -15px;
+	background: url("../images/app-del.png") 0 0 no-repeat;
 }
 .list-del div {
 	margin-left: -17px;
 }
-
+.list-icon div {
+	width: 84px;
+	margin-left: -31px;
+	background: url("../images/list-icon.png") 0 0 no-repeat;
+}
 /* 删除确认框 */
 .del-check {
 	display: none;
@@ -163,12 +181,12 @@
 	float: left;
 	width: 76px;
 	height: 26px;
+	margin-right: 8px;
 }
 .Jump-page div {
-	float: left;
+	float: right;
 	width: 52px;
 	height: 28px;
-	margin-left: 8px;
 	border: 1px solid #e1e1e1;
 	text-align: center;
 	cursor: pointer;
