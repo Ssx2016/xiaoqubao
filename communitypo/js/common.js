@@ -70,12 +70,12 @@ $('.intex, .intarea').on('blur', function(){
 var checkNum = true;
 $('.checkout span').click(function(){
 	if (checkNum) {
-		$('.incheck ul').css({
+		$(this).parent('.checkout').siblings('ul').css({
 			'display' : 'block'
 		})
 		checkNum = false;
 	} else {
-		$('.incheck ul').css({
+		$(this).parent('.checkout').siblings('ul').css({
 			'display' : 'none'
 		})
 		checkNum = true;

@@ -253,6 +253,10 @@
 	line-height: 28px;
 	outline: medium;
 }
+.checkcon {
+	float: left;
+	width: 311px;
+}
 .checkbox {
 	float: left;
 	border-top: 1px solid #ddd;
@@ -263,6 +267,9 @@
 	width: 205px;
 	color: #b3b5b6;
 }
+.checkout {
+	float: left;
+}
 .checkout span {
 	float: left;
 	display: block;
@@ -271,8 +278,9 @@
 	background: url("../images/liandong.png") 0 0 no-repeat;
 }
 .incheck ul {
+	float: right;
 	display: none;
-	width: 240px;
+	width: 239px;
 	margin-left: 70px;
 	border-right: 1px solid #ddd;
 	border-left: 1px solid #ddd;
