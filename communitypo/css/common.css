@@ -18,6 +18,7 @@
 	float: left;
 	width: 184px;
 	min-height: 600px;
+	_height: expression(this.scrollHeight < 600 ? "600px" : "");
 }
 .common-tit {
 	padding: 30px 0;
@@ -226,52 +227,65 @@
 	height:28px;
 	color:#999999;
 }
-/* 隐藏页面的标题 */
-.common-hidtit {
-	width: 860px;
-	height: 49px;
-	padding: 0 20px;
-	background: #2ed771;
+
+
+
+/*input样式*/
+.tabelbox {
+	border: 1px solid #ddd;
 }
-.common-hidtit h3 {
+.inbox, .incheck {
+	margin-bottom: 18px;
+}
+.inlab {
 	float: left;
-	line-height: 49px;
-	color: #fff;
-	font-size: 18px;
-	font-weight: bold;
+	line-height: 30px;
 }
-.common-hidtit div {
-	float: right;
-	width: 50px;
-	height: 49px;
-	background: url("../images/app-out.png") right center no-repeat;
-	cursor: pointer;
+.textbox, .tareabox {
+	float: left;
+	border: 1px solid #ddd;
 }
-/* 下一页 */
-.common-nextpage {
-    float: left;
-    width: 68px;
-    height: 30px;
-    margin-right: 10px;
-    padding-left: 10px;
-    background: url("../images/nextpage.png") right 0 no-repeat;
+.intex, .checktex, .intarea {
+	width: 228px;
+	height: 28px;
+	border: 0;
+	padding: 0 6px;
+	line-height: 28px;
+	outline: medium;
 }
-/* 跳转 */
-.Jump-page {
-    float: left;
-    width: 142px;
+.checkbox {
+	float: left;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
 }
-.Jump-page input {
-    float: left;
-    width: 76px;
-    height: 26px;
-    margin-right: 8px;
+.checktex {
+	width: 205px;
+	color: #b3b5b6;
 }
-.Jump-page div {
-    float: right;
-    width: 52px;
-    height: 28px;
-    border: 1px solid #e1e1e1;
-    text-align: center;
-    cursor: pointer;
+.checkout span {
+	float: left;
+	display: block;
+	width: 23px;
+	height: 30px;
+	background: url("../images/liandong.png") 0 0 no-repeat;
+}
+.incheck ul {
+	display: none;
+	width: 240px;
+	margin-left: 70px;
+	border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+	color: #b3b5b6;
+}
+.incheck li {
+	height: 25px;
+	line-height: 25px;
+}
+.intarea {
+	width: 399px;
+	height: 176px;
+	resize : none;
 }
