@@ -55,3 +55,49 @@ $('.common-btn').hover(function() {
 		'background' : '#2ed771'
 	})
 })
+
+//input聚焦效果
+$('.intex, .intarea').on('focus', function(){
+	$(this).parent().css({
+		'border' : '1px solid #39f'
+	})
+})
+$('.intex, .intarea').on('blur', function(){
+	$(this).parent().css({
+		'border' : '1px solid #ddd'
+	})
+})
+var checkNum = true;
+$('.checkout span').click(function(){
+	if (checkNum) {
+		$('.incheck ul').css({
+			'display' : 'block'
+		})
+		checkNum = false;
+	} else {
+		$('.incheck ul').css({
+			'display' : 'none'
+		})
+		checkNum = true;
+	}
+})
+$('.incheck li').hover(function(){
+	$(this).css({
+		'background': '#eee',
+		'color': '#000'
+	})
+}, function(){
+	$(this).css({
+		'background': '#fff',
+		'color': '#b3b5b6'
+	})
+})
+$('.incheck li').click(function(){
+	var liIndex = $(this).index();
+	var liCon = $('.incheck li').eq(liIndex).html();
+	$('.checktex').html(liCon);
+	$('.incheck ul').css({
+		'display' : 'none'
+	})
+	checkNum = true;
+})
