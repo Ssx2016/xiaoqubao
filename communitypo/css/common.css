@@ -247,3 +247,31 @@
 	background: url("../images/app-out.png") right center no-repeat;
 	cursor: pointer;
 }
+/* 下一页 */
+.common-nextpage {
+    float: left;
+    width: 68px;
+    height: 30px;
+    margin-right: 10px;
+    padding-left: 10px;
+    background: url("../images/nextpage.png") right 0 no-repeat;
+}
+/* 跳转 */
+.Jump-page {
+    float: left;
+    width: 142px;
+}
+.Jump-page input {
+    float: left;
+    width: 76px;
+    height: 26px;
+    margin-right: 8px;
+}
+.Jump-page div {
+    float: right;
+    width: 52px;
+    height: 28px;
+    border: 1px solid #e1e1e1;
+    text-align: center;
+    cursor: pointer;
+}
