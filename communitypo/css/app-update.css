@@ -1,0 +1,91 @@
+@charset 'utf-8';
+.common-tailcon {
+	position: relative;
+}
+.common-tailcon table {
+	width: 878px;
+	border-collapse:collapse;
+	border: 1px solid #d8d9db;
+}
+.common-tailcon thead tr {
+	height: 40px;
+	background-color: #eee;
+	line-height: 40px;
+}
+.common-tailcon tbody tr {
+	border-top: 1px solid #d8d9db;
+}
+.common-tailcon table th, .common-tailcon table td {
+	overflow: hidden;
+	display: inline-block;
+	width: 175px;
+	text-indent: 30px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.common-tailcon table td {
+	padding: 20px 0;
+	min-height: 55px;
+}
+.common-tailcon table span {
+	color: #6496c8;
+	margin-right: 20px;
+	cursor: pointer;
+}
+/*查看详情隐藏样式*/
+.apptail {
+	display: none;
+	position: absolute;
+	top: 202px;
+	left: 200px;
+	width: 605px;
+	border: 1px solid #c2c2c2;
+	-webkit-box-shadow: #c2c2c2 0px 0px 2px 2px;
+	-moz-box-shadow: #c2c2c2 0px 0px 2px 2px;
+	box-shadow: #c2c2c2 0px 0px 2px 2px;
+	background-color: #fff;
+}
+.apptail h2 {
+	height: 50px;
+	padding: 0 15px 0 25px;
+	background-color: #2ed771;
+	color: #fff;
+	font-size: 18px;
+	line-height: 50px;
+}
+.apprtail h2 strong, .updatatail span, .linkaddress span {
+	float: left;
+}
+.apptail h2 span {
+	float: right;
+	width: 28px;
+	height: 50px;
+	background: url("../images/app-out.png") 0 10px no-repeat;
+	cursor: pointer;
+}
+.apptailcon {
+	padding: 30px 100px 50px 70px;
+}
+.apptailcon p {
+	word-spacing: 3px;
+}
+.apptail .updatatail p, .apptail .linkaddress p {
+	float: left;
+	width: 300px;
+	word-break: break-all;
+}
+.linkaddress, .updatatail {
+	width: 100%;
+}
+ .apptail .linkaddress a {
+	color: #6496c8;
+ }
+.linkaddress div, .updatatail div {
+	float: right;
+	width: 360px;
+	font-size: 12px;
+	line-height: 22px;
+}
+.linkaddress span {
+	word-spacing: 24px;
+}

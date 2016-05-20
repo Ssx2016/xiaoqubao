@@ -1,0 +1,104 @@
+@charset 'utf-8';
+.common-tailcon {
+	position: relative;
+}
+.common-city .username {
+	width: 300px;
+	padding-left: 54px;
+	margin-top: 17px;
+}
+.common-city .username input {
+	width: 200px;
+	height: 26px;
+}
+.common-btn {
+	width: 100px;
+	margin: 14px 0 40px;
+}
+/*用户列表详细信息*/
+.common-tailcon table {
+	width: 878px;
+	border: 1px solid #dcdcdc;
+}
+.common-tailcon table thead {
+	background-color: #eee;
+}
+.common-tailcon table tr {
+	height: 49px;
+}
+.common-tailcon table th, .common-tailcon table td {
+	overflow: hidden;
+	display: inline-block;
+	width: 97px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-align: center;
+	line-height: 49px;
+}
+.common-tailcon tbody tr {
+	border-top: 1px solid #dcdcdc;
+}
+.common-tailcon tbody span {
+	color: #6496c8;
+	cursor: pointer;
+}
+/*隐藏详情*/
+.usertail {
+	display: none;
+	position: absolute;
+	top: 400px;
+	left: 200px;
+	width: 605px;
+	height: 404px;
+	border: 1px solid #c2c2c2;
+	-webkit-box-shadow: #c2c2c2 0px 0px 2px 2px;
+	-moz-box-shadow: #c2c2c2 0px 0px 2px 2px;
+	box-shadow: #c2c2c2 0px 0px 2px 2px;
+	background-color: #fff;
+}
+.usertail h2 {
+	height: 50px;
+	padding: 0 15px 0 25px;
+	background-color: #2ed771;
+	color: #fff;
+	font-size: 18px;
+	line-height: 50px;
+}
+.usertail h2 strong {
+	float: left;
+}
+.usertail h2 span {
+	float: right;
+	width: 28px;
+	height: 50px;
+	background: url("../images/app-out.png") 0 10px no-repeat;
+	cursor: pointer;
+}
+.usertail div {
+	float: left;
+	width: 302px;
+	height: 234px;
+	padding: 25px 0;
+	line-height: 30px;
+}
+.usersix {
+	text-indent: 65px;
+}
+.userfive {
+	text-indent: 79px;
+}
+.userfour {
+	text-indent: 93px;
+}
+.userthree {
+	text-indent: 107px;
+}
+.usertwo {
+	text-indent: 121px;
+}
+.usertail div span {
+	margin-left: 10px;
+}
+.usertail h3 {
+	text-indent: 360px;
+}

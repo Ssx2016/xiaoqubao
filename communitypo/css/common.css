@@ -18,7 +18,6 @@
 	float: left;
 	width: 184px;
 	min-height: 600px;
-	_height: expression(this.scrollHeight < 600 ? "600px" : "");
 }
 .common-tit {
 	padding: 30px 0;
@@ -206,9 +205,9 @@
 }
 /*三级联动提取公共样式*/
 .common-city {
-	width: 874px;
-	height: 95px;
-	padding-top: 35px;
+	width: 878px;
+	height: 105px;
+	padding-top: 25px;
 	border: 1px solid #ddd;
 }
 .common-city div {
@@ -227,8 +226,82 @@
 	height:28px;
 	color:#999999;
 }
-
-
+/* 隐藏页面的标题 */
+.common-hidtit {
+	width: 860px;
+	height: 49px;
+	padding: 0 20px;
+	background: #2ed771;
+}
+.common-hidtit h3 {
+	float: left;
+	line-height: 49px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+}
+.common-hidtit div {
+	float: right;
+	width: 50px;
+	height: 49px;
+	background: url("../images/app-out.png") right center no-repeat;
+	cursor: pointer;
+}
+/* 下一页 */
+.common-nextpage {
+    float: left;
+    width: 68px;
+    height: 30px;
+    margin-right: 10px;
+    padding-left: 10px;
+    background: url("../images/nextpage.png") right 0 no-repeat;
+}
+/* 内容页的跳转 */
+.page-num {
+	float: right;
+	width: 262px;
+	height: 30px;
+	margin-top: 17px;
+}
+.next-page {
+	float: left;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+}
+.next-clickadd, .next-clicksub {
+	float: left;
+	width: 30px;
+	height: 30px;
+	background: url("../images/nextpage.png");
+	margin: 0 10px;
+	cursor: pointer;
+}
+.next-clicksub {
+	visibility: hidden;
+	background: url("../images/nextpage1.png");
+	margin-left: 0px;
+}
+.Jump-page {
+    float: left;
+    width: 142px;
+}
+.Jump-page input {
+    float: left;
+    width: 76px;
+    height: 26px;
+    margin-right: 8px;
+    line-height: 30px;
+}
+.Jump-page div {
+    float: right;
+    width: 52px;
+    height: 28px;
+    border: 1px solid #e1e1e1;
+    text-align: center;
+    line-height: 28px;
+    cursor: pointer;
+}
 
 /*input样式*/
 .tabelbox {
@@ -239,6 +312,7 @@
 }
 .inlab {
 	float: left;
+	width: 70px;
 	line-height: 30px;
 }
 .textbox, .tareabox {
@@ -253,10 +327,6 @@
 	line-height: 28px;
 	outline: medium;
 }
-.checkcon {
-	float: left;
-	width: 311px;
-}
 .checkbox {
 	float: left;
 	border-top: 1px solid #ddd;
@@ -267,9 +337,6 @@
 	width: 205px;
 	color: #b3b5b6;
 }
-.checkout {
-	float: left;
-}
 .checkout span {
 	float: left;
 	display: block;
@@ -278,9 +345,8 @@
 	background: url("../images/liandong.png") 0 0 no-repeat;
 }
 .incheck ul {
-	float: right;
 	display: none;
-	width: 239px;
+	width: 240px;
 	margin-left: 70px;
 	border-right: 1px solid #ddd;
 	border-left: 1px solid #ddd;

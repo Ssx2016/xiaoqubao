@@ -44,7 +44,6 @@ telescopic();
 $('.back-index').click(function(){
 	window.location.href = 'landing.html';
 })
-
 // 公共按钮的hover效果
 $('.common-btn').hover(function() {
 	$(this).css({
@@ -55,49 +54,68 @@ $('.common-btn').hover(function() {
 		'background' : '#2ed771'
 	})
 })
-
-//input聚焦效果
-$('.intex, .intarea').on('focus', function(){
-	$(this).parent().css({
-		'border' : '1px solid #39f'
-	})
-})
-$('.intex, .intarea').on('blur', function(){
-	$(this).parent().css({
-		'border' : '1px solid #ddd'
-	})
-})
-var checkNum = true;
-$('.checkout span').click(function(){
-	if (checkNum) {
-		$(this).parent('.checkout').siblings('ul').css({
-			'display' : 'block'
+// 表格操作hover效果
+		$('.common-tailcon table span').hover(function() {
+			$(this).css({
+				'color' : '#4df'
+			})
+		}, function() {
+			$(this).css({
+				'color' : '#6aa2da'
+			})
 		})
-		checkNum = false;
-	} else {
-		$(this).parent('.checkout').siblings('ul').css({
-			'display' : 'none'
+// 内容点页面更新（目前JS仅实现跳转页跳转，内容方面涉及PHP未添加）
+$('.next-clickadd').on('click', function() {
+	$('.next-clicksub').css({
+		'visibility' : 'visible'
+	});
+	if($('.next-page').children()[0].innerHTML < $('.next-page').children()[1].innerHTML) {
+		$('.next-page').children()[0].innerHTML = $('.next-page').children()[0].innerHTML / 1 + 1;
+	}
+	if($('.next-page').children()[0].innerHTML == $('.next-page').children()[1].innerHTML) {
+		$(this).css({
+			'visibility' : 'hidden'
 		})
-		checkNum = true;
 	}
 })
-$('.incheck li').hover(function(){
-	$(this).css({
-		'background': '#eee',
-		'color': '#000'
-	})
-}, function(){
-	$(this).css({
-		'background': '#fff',
-		'color': '#b3b5b6'
-	})
+$('.next-clicksub').on('click', function() {
+	$('.next-clickadd').css({
+		'visibility' : 'visible'
+	});
+	if($('.next-page').children()[0].innerHTML > 1) {
+		$('.next-page').children()[0].innerHTML = $('.next-page').children()[0].innerHTML / 1 - 1;
+	}
+	if($('.next-page').children()[0].innerHTML == 1) {
+		$(this).css({
+			'visibility' : 'hidden'
+		})
+	}
 })
-$('.incheck li').click(function(){
-	var liIndex = $(this).index();
-	var liCon = $('.incheck li').eq(liIndex).html();
-	$('.checktex').html(liCon);
-	$('.incheck ul').css({
-		'display' : 'none'
-	})
-	checkNum = true;
+$('.Jump-page div').on('click', function() {
+	if($('.Jump-page input')[0].value >= 1 && $('.Jump-page input')[0].value <= $('.next-page').children()[1].innerHTML / 1) {
+		$('.next-page').children()[0].innerHTML = $('.Jump-page input')[0].value;
+	}
+	$('.Jump-page input')[0].value = '';
+	if($('.next-page').children()[0].innerHTML == 1) {
+		$('.next-clicksub').css({
+			'visibility' : 'hidden'
+		})
+		$('.next-clickadd').css({
+			'visibility' : 'visible'
+		})
+	} else if($('.next-page').children()[0].innerHTML == $('.next-page').children()[1].innerHTML) {
+		$('.next-clickadd').css({
+			'visibility' : 'hidden'
+		})
+		$('.next-clicksub').css({
+			'visibility' : 'visible'
+		})
+	} else {
+		$('.next-clickadd').css({
+			'visibility' : 'visible'
+		})
+		$('.next-clicksub').css({
+			'visibility' : 'visible'
+		})
+	}
 })
