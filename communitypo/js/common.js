@@ -44,6 +44,7 @@ telescopic();
 $('.back-index').click(function(){
 	window.location.href = 'landing.html';
 })
+
 // 公共按钮的hover效果
 $('.common-btn').hover(function() {
 	$(this).css({
@@ -54,16 +55,61 @@ $('.common-btn').hover(function() {
 		'background' : '#2ed771'
 	})
 })
-// 表格操作hover效果
-		$('.common-tailcon table span').hover(function() {
-			$(this).css({
-				'color' : '#4df'
-			})
-		}, function() {
-			$(this).css({
-				'color' : '#6aa2da'
-			})
+//input聚焦效果
+$('.intex, .intarea').on('focus', function(){
+	$(this).parent().css({
+		'border' : '1px solid #39f'
+	})
+})
+$('.intex, .intarea').on('blur', function(){
+	$(this).parent().css({
+		'border' : '1px solid #ddd'
+	})
+})
+var checkNum = true;
+$('.checkout span').click(function(){
+	if (checkNum) {
+		$('.incheck ul').css({
+			'display' : 'block'
 		})
+		checkNum = false;
+	} else {
+		$('.incheck ul').css({
+			'display' : 'none'
+		})
+		checkNum = true;
+	}
+})
+$('.incheck li').hover(function(){
+	$(this).css({
+		'background': '#eee',
+		'color': '#000'
+	})
+}, function(){
+	$(this).css({
+		'background': '#fff',
+		'color': '#b3b5b6'
+	})
+})
+$('.incheck li').click(function(){
+	var liIndex = $(this).index();
+	var liCon = $('.incheck li').eq(liIndex).html();
+	$('.checktex').html(liCon);
+	$('.incheck ul').css({
+		'display' : 'none'
+	})
+	checkNum = true;
+})
+// 表格操作hover效果
+$('.common-tailcon table span').hover(function() {
+	$(this).css({
+		'color' : '#4df'
+	})
+}, function() {
+	$(this).css({
+		'color' : '#6aa2da'
+	})
+})
 // 内容点页面更新（目前JS仅实现跳转页跳转，内容方面涉及PHP未添加）
 $('.next-clickadd').on('click', function() {
 	$('.next-clicksub').css({
