@@ -363,3 +363,25 @@
 	height: 176px;
 	resize : none;
 }
+/* 表格基本样式 */
+.common-tab table {
+    width: 880px;
+    margin-top: 77px;
+    text-align: center;
+}
+.common-tab table th {
+    padding: 0 10px;
+    border: 1px solid #e1e1e1;
+    text-align: center;
+    line-height: 39px;
+}
+.search-list table td {
+    padding: 0 15px;
+    border: 1px solid #e1e1e1;
+}
+.common-tab table img {
+    display: block;
+    width: 60px;
+    height: 59px;
+    margin: 11px auto;
+}
