@@ -160,56 +160,14 @@
 	height: 29px;
 }
 .tab-del {
-	float: right;
-	position: relative;
+	float: right!important;
 	width: 21px;
 	height: 29px;
 	background: url("../images/appdel-1.png") center center no-repeat;
 	cursor: pointer;
-	z-index: 20;
 }
 .tab-del em {
-	display: none;
-	position: absolute;
-	left: -15px;
 	bottom: 35px;
-	width: 50px;
-	height: 28px;
-	line-height: 22px;
-	color: #fff;
-	background: url("../images/del.png") center center no-repeat;
-}
-/* 删除确认框 */
-.del-check {
-	display: none;
-	position: absolute;
-	top: 86px;
-	left: -5px;
-	_left: -9px;
-	width: 223px;
-	height: 94px;
-	padding: 34px 0 0 20px;
-	color: #6a6868;
-	background: url("../images/del-check.png") center center no-repeat;
-	z-index: 220;
-}
-.del-check span {
-	float: left;
-	overflow: hidden;
-	width: 199px;
-	height: 14px;
-	margin-bottom: 24px;
-	text-align: left;
-	line-height: 14px;
-}
-.del-check div {
-	float: left;
-	width: 88px;
-	height: 27px;
-	margin-right: 19px;
-	border: 1px solid #b4b4b4;
-	line-height: 28px;
-	cursor: pointer;
 }
 /* 自定义链接 */
 .custom-link {

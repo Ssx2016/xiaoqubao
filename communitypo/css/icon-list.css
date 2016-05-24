@@ -2,192 +2,62 @@
 /* 搜索信息模块 */
 .icon-search {
 	width: 819px;
-	height: 102px;
+	/*height: 102px;*/
 	margin-bottom: 12px;
-	padding: 29px 0 0 59px;
+	padding: 29px 0 26px 59px;
 	border: 1px solid #e1e1e1;
 }
 /* 选择城市 */
-.city div {
-	float: left;
-	margin: 0 34px 16px 0;
+.checktex {
+	width: 140px;
+	color: #b3b5b6;
 }
-.choose {
-	appearance:none;
-	-moz-appearance:none;
-	-webkit-appearance:none;
-	width:142px;
-	height:28px;
-	padding-left: 6px;
-	border:1px solid #ccc;
-	color:#999;
-	background:url("../images/liandong.png") right center no-repeat;
+.incheck ul {
+	width: 174px;
+}
+.intex {
+	width: 142px;
+	color: #000;
 }
 /* ICON标题 */
 .icontit {
 	margin-left: -11px;
+	height: 30px;
 }
-.icontit div {
+.inbox {
 	float: left;
-	margin-right: 71px;
-}
-.icontit input {
-	width: 196px;
-	height: 26px;
-	line-height: 28px;
 }
 /* 搜索按钮 */
 .common-btn {
 	width: 100px;
 	margin-top: 0;
 }
-/* 便民ICON列表信息 */
-.search-list {
-	position: relative;
-}
-.search-list table {
-	width: 880px;
-	height: 706px;
-	margin-top: 77px;
-	text-align: center;
-}
 /* 列表 */
-.search-list table th {
-	border: 1px solid #e1e1e1;
-	text-align: center;
-	line-height: 39px;
-}
-.search-list table td {
-	overflow: hidden;
-	padding: 0 20px;
-	border: 1px solid #e1e1e1;
-}
 .search-list table img {
-	display: block;
-	width: 60px;
-	height: 59px;
 	margin: 17px auto;
 }
-/* 下载、删除、详情按钮 */
-.list-operate {
-	width: 123px;
-	height: 21px;
-	margin: 0 auto;
-}
-.download {
-	float: left;
+.tab-operate {
 	position: relative;
-	width: 19px;
-	height: 21px;
-	margin-right: 34px;
-	background: url("../images/download-1.png") 0 center no-repeat;
-	cursor: pointer;
 }
-.list-del {
-	float: left;
-	position: relative;
-	width: 16px;
-	height: 21px;
-	margin-right: 32px;
-	background: url("../images/listdel-1.png") center 0 no-repeat;
-	cursor: pointer;
+.td-1 {
+	z-index: 9;
 }
-.list-icon {
-	float: left;
-	position: relative;
-	width: 21px;
-	height: 21px;
-	background: url("../images/listicon-1.png") 0 center no-repeat;
-	cursor: pointer;
+.td-2 {
+	z-index: 8;	
 }
-/* 按钮悬停样式 */
-.download div, .list-del div, .list-icon div {
-	display: none;
-	position: absolute;
-	left: 0;
-	bottom: 28px;
-	width: 50px;
-	height: 28px;
-	margin-left: -15px;
-	line-height: 22px;
-	color: #fff;
-	background: url("../images/app-del.png") 0 0 no-repeat;
+.td-3 {
+	z-index: 7;	
 }
-.list-del div {
-	margin-left: -17px;
+.td-4 {
+	z-index: 6;
 }
-.list-icon div {
-	width: 84px;
-	margin-left: -31px;
-	background: url("../images/list-icon.png") 0 0 no-repeat;
+.td-5 {
+	z-index: 5;
 }
-/* 删除确认框 */
-.del-check {
-	display: none;
-	position: absolute;
-	top: 0;
-	right: 82px;
-	width: 243px;
-	height: 128px;
-	padding-left: 21px;
-	background: url("../images/del-check.png") 0 0 no-repeat;
+.td-6 {
+	z-index: 4;
 }
-.del-check span {
-	float: left;
-	overflow: hidden;
-	width: 199px;
-	height: 14px;
-	margin: 35px 0 24px 0 ;
-	color: #6a6868;
-	line-height: 14px;
+.td-7 {
+	z-index: 3;
 }
-.del-check div {
-	float: left;
-	width: 89px;
-	height: 28px;
-	margin-right: 19px;
-	border: 1px solid #b4b4b4;
-	color: #6a6868;
-	text-align: center;
-	line-height: 28px;
-	cursor: pointer;
-}
-/* 跳转页面 */
-.page-num {
-	float: right;
-	display: inline;
-	width: 230px;
-	height: 30px;
-	margin-top: 18px;
-	color: #292f35;
-	line-height: 30px;
-	font-size: 16px;
-}
-/* 下一页 */
-.next-page {
-	float: left;
-	width: 68px;
-	height: 30px;
-	margin-right: 10px;
-	padding-left: 10px;
-	background: url("../images/nextpage.png") right 0 no-repeat;
-}
-/* 跳转 */
-.Jump-page {
-	float: left;
-	width: 142px;
-}
-.Jump-page input {
-	float: left;
-	width: 76px;
-	height: 26px;
-	margin-right: 8px;
-}
-.Jump-page div {
-	float: right;
-	width: 52px;
-	height: 28px;
-	border: 1px solid #e1e1e1;
-	text-align: center;
-	cursor: pointer;
-}
+

@@ -101,15 +101,15 @@ $('.incheck li').click(function(){
 	checkNum = true;
 })
 // 表格操作hover效果
-$('.common-tailcon table span').hover(function() {
-	$(this).css({
-		'color' : '#4df'
-	})
-}, function() {
-	$(this).css({
-		'color' : '#6aa2da'
-	})
-})
+// $('.common-tailcon table span').hover(function() {
+// 	$(this).css({
+// 		'color' : '#4df'
+// 	})
+// }, function() {
+// 	$(this).css({
+// 		'color' : '#6aa2da'
+// 	})
+// })
 // 内容点页面更新（目前JS仅实现跳转页跳转，内容方面涉及PHP未添加）
 $('.next-clickadd').on('click', function() {
 	$('.next-clicksub').css({
@@ -164,4 +164,87 @@ $('.Jump-page div').on('click', function() {
 			'visibility' : 'visible'
 		})
 	}
+})
+// 删除按钮悬停效果
+$('.tab-del').hover(function() {
+	$(this).css({
+		'background' : 'url("../images/listdel-2.png") 0 center no-repeat'
+	})
+	$(this).children('em').css({
+		'display' : 'block'
+	})
+}, function() {
+	$(this).css({
+		'background' : 'url("../images/listdel-1.png") 0 center no-repeat'
+	})
+	$(this).children('em').css({
+		'display' : 'none'
+	})
+})
+// 下载按钮悬停效果
+$('.download').hover(function() {
+	$(this).css({
+		'background' : 'url("../images/download-2.png") 0 center no-repeat'
+	})
+	$(this).children('div').css({
+		'display' : 'block'
+	})
+}, function() {
+	$(this).css({
+		'background' : 'url("../images/download-1.png") 0 center no-repeat'
+	})
+	$(this).children('div').css({
+		'display' : 'none'
+	})
+})
+// 详情按钮悬停效果
+$('.list-icon').hover(function() {
+	$(this).css({
+		'background' : 'url("../images/listicon-2.png") 0 center no-repeat'
+	})
+	$(this).children('div').css({
+		'display' : 'block'
+	})
+}, function() {
+	$(this).css({
+		'background' : 'url("../images/listicon-1.png") 0 center no-repeat'
+	})
+	$(this).children('div').css({
+		'display' : 'none'
+	})
+})
+
+// 删除确认框-弹出
+$('.tab-del').on('click', function() {
+	$(this).parents('.tab-state').siblings('.del-check').css({
+		'display' : 'block'
+	})
+})
+// 删除确认框-悬停效果
+$('.del-check div').hover(function() {
+	$(this).css({
+		'width' : '90px',
+		'height' : '29px',
+		'border' : '0',
+		'box-shadow' : '#dedede 0px 0px 1px 1px',
+		'color' : '#fff',
+		'background' : '#2ed771'
+	})
+}, function() {
+	$(this).css({
+		'width' : '88px',
+		'height' : '27px',
+		'border' : '1px solid #b4b4b4',
+		'box-shadow' : 'none',
+		'color' : '#6a6868',
+		'background' : '#fff'
+	})
+})
+// 确定删除
+$('.del-yes').on('click',function(){
+	$(this).parents('tr').remove();
+});
+// 取消删除
+$('.del-no').on('click', function() {
+	$(this).parents('.del-check').stop(true).fadeOut(50);
 })

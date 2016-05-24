@@ -8,168 +8,60 @@
 	border: 1px solid #e1e1e1;
 }
 /* 选择城市 */
-.city div {
-	float: left;
-	margin: 0 34px 16px 0;
-}
-.choose {
-	appearance:none;
-	-moz-appearance:none;
-	-webkit-appearance:none;
-	width:142px;
-	height:28px;
-	padding-left: 6px;
-	border:1px solid #ccc;
-	color:#999;
-	background:url("../images/liandong.png") right center no-repeat;
-}
 /* 发布时间 */
-.release-time div {
+.upload-time {
 	float: left;
-	margin-right: 71px;
+	height: 30px;
+	margin: 19px 0 22px 7px;
 }
-.release-time input {
-	width: 196px;
-	height: 28px;
-	line-height: 28px;
+.inlab {
+	width: 98px;
+	margin-right: 11px;
+}
+.inbox {
+	float: left;
+	margin-right: 70px;
+}
+.intex {
+	width: 186px;
+	color: #000;
 }
 /* 搜索按钮 */
 .common-btn {
 	width: 100px;
 	margin-top: 0;
 }
-/* 互动页列表信息 */
-.search-list table {
-	width: 880px;
-	height: 706px;
-	margin-top: 77px;
-	text-align: center;
-}
 /* 列表 */
-.search-list table th {
-	border: 1px solid #e1e1e1;
-	text-align: center;
-	line-height: 39px;
-}
-.search-list table td {
-	overflow: hidden;
-	padding: 0 20px;
-	border: 1px solid #e1e1e1;
-}
 .search-list table img {
-	display: block;
-	width: 60px;
-	height: 59px;
 	margin: 17px auto;
 }
-/* 下载、删除按钮 */
+.tab-operate {
+	position: relative;
+}
+.td-1 {
+	z-index: 9;
+}
+.td-2 {
+	z-index: 8;	
+}
+.td-3 {
+	z-index: 7;	
+}
+.td-4 {
+	z-index: 6;
+}
+.td-5 {
+	z-index: 5;
+}
+.td-6 {
+	z-index: 4;
+}
+.td-7 {
+	z-index: 3;
+}
+ /*下载、删除 */
 .list-operate {
+	float: right;
 	width: 69px;
-	height: 21px;
 	margin: 0 auto;
-}
-.download {
-	float: left;
-	position: relative;
-	width: 19px;
-	height: 21px;
-	background: url("../images/download-1.png") center center no-repeat;
-	cursor: pointer;
-}
-.list-del {
-	float: right;
-	position: relative;
-	width: 16px;
-	height: 21px;
-	background: url("../images/listdel-1.png") center center no-repeat;
-	cursor: pointer;
-}
-.download div, .list-del div {
-	display: none;
-	position: absolute;
-	left: 0;
-	bottom: 28px;
-	width: 50px;
-	height: 28px;
-	line-height: 22px;
-	color: #fff;
-	background: url("../images/app-del.png") center center no-repeat;
-	cursor: pointer;
-}
-.download div {
-	margin-left: -15px;
-}
-.list-del div {
-	margin-left: -17px;
-}
-
-/* 删除确认框 */
-.del-check {
-	display: none;
-	position: absolute;
-	top: 0;
-	right: 82px;
-	width: 243px;
-	height: 128px;
-	padding-left: 21px;
-	background: url("../images/del-check.png") 0 0 no-repeat;
-}
-.del-check span {
-	float: left;
-	overflow: hidden;
-	width: 199px;
-	height: 14px;
-	margin: 35px 0 24px 0 ;
-	color: #6a6868;
-	line-height: 14px;
-}
-.del-check div {
-	float: left;
-	width: 89px;
-	height: 28px;
-	margin-right: 19px;
-	border: 1px solid #b4b4b4;
-	color: #6a6868;
-	text-align: center;
-	line-height: 28px;
-	cursor: pointer;
-}
-/* 跳转页面 */
-.page-num {
-	float: right;
-	display: inline;
-	width: 230px;
-	height: 30px;
-	margin-top: 18px;
-	color: #292f35;
-	line-height: 30px;
-	font-size: 16px;
-}
-/* 下一页 */
-.next-page {
-	float: left;
-	width: 68px;
-	height: 30px;
-	margin-right: 10px;
-	padding-left: 10px;
-	background: url("../images/nextpage.png") right 0 no-repeat;
-}
-/* 跳转 */
-.Jump-page {
-	float: left;
-	width: 142px;
-}
-.Jump-page input {
-	float: left;
-	width: 76px;
-	height: 26px;
-}
-.Jump-page div {
-	float: left;
-	width: 52px;
-	height: 28px;
-	margin-left: 8px;
-	border: 1px solid #e1e1e1;
-	text-align: center;
-	cursor: pointer;
 }

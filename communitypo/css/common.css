@@ -203,29 +203,6 @@
 	box-shadow: #c2c2c2 0px 0px 2px 2px;
 	cursor: pointer;
 }
-/*三级联动提取公共样式*/
-.common-city {
-	width: 878px;
-	height: 105px;
-	padding-top: 25px;
-	border: 1px solid #ddd;
-}
-.common-city div {
-	float: left;
-	width: 232px;
-	height: 30px;
-	padding-left: 40px;
-}
-.common-choose {
-	appearance: none;
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	padding-left: 6px;
-	background:url("../images/liandong.png")  no-repeat right center;
-	width:142px;
-	height:28px;
-	color:#999999;
-}
 /* 隐藏页面的标题 */
 .common-hidtit {
 	width: 860px;
@@ -246,15 +223,6 @@
 	height: 49px;
 	background: url("../images/app-out.png") right center no-repeat;
 	cursor: pointer;
-}
-/* 下一页 */
-.common-nextpage {
-    float: left;
-    width: 68px;
-    height: 30px;
-    margin-right: 10px;
-    padding-left: 10px;
-    background: url("../images/nextpage.png") right 0 no-repeat;
 }
 /* 内容页的跳转 */
 .page-num {
@@ -312,7 +280,7 @@
 }
 .inlab {
 	float: left;
-	width: 70px;
+	/*width: 70px;*/
 	line-height: 30px;
 }
 .textbox, .tareabox {
@@ -375,8 +343,8 @@
     text-align: center;
     line-height: 39px;
 }
-.search-list table td {
-    padding: 0 15px;
+.common-tab table td {
+    padding: 0 20px;
     border: 1px solid #e1e1e1;
 }
 .common-tab table img {
@@ -384,4 +352,87 @@
     width: 60px;
     height: 59px;
     margin: 11px auto;
+}
+/* 删除确认框 */
+.del-check {
+	display: none;
+	position: absolute;
+	top: 69px;
+	left: -38px;
+	width: 243px;
+	height: 128px;
+	padding-left: 21px;
+	background: url("../images/del-check.png") 0 0 no-repeat;
+}
+.del-check span {
+	float: left;
+	overflow: hidden;
+	width: 199px;
+	height: 14px;
+	margin: 35px 0 24px 0 ;
+	color: #6a6868;
+	line-height: 14px;
+}
+.del-check div {
+	float: left;
+	width: 89px;
+	height: 28px;
+	margin-right: 19px;
+	border: 1px solid #b4b4b4;
+	color: #6a6868;
+	text-align: center;
+	line-height: 28px;
+	cursor: pointer;
+}
+ /*下载、删除、详情按钮 */
+.list-operate {
+	width: 123px;
+	height: 21px;
+	margin: 0 auto;
+}
+.download {
+	float: left;
+	position: relative;
+	width: 19px;
+	height: 21px;
+	margin-right: 34px;
+	background: url("../images/download-1.png") 0 center no-repeat;
+	cursor: pointer;
+}
+.tab-del {
+	float: left;
+	position: relative;
+	width: 16px;
+	height: 21px;
+	margin-right: 32px;
+	background: url("../images/listdel-1.png") center 0 no-repeat;
+	cursor: pointer;
+}
+.list-icon {
+	float: left;
+	position: relative;
+	width: 21px;
+	height: 21px;
+	background: url("../images/listicon-1.png") 0 center no-repeat;
+	cursor: pointer;
+}
+/* 按钮悬停样式 */
+.download div, .tab-del em, .list-icon div {
+	display: none;
+	position: absolute;
+	left: -15px;
+	bottom: 28px;
+	width: 50px;
+	height: 28px;
+	line-height: 22px;
+	color: #fff;
+	background: url("../images/del.png") 0 0 no-repeat;
+}
+.tab-del em {
+	left: -17px;
+}
+.list-icon div {
+	width: 84px;
+	left: -31px;
+	background: url("../images/list-icon.png") 0 0 no-repeat;
 }

@@ -83,37 +83,3 @@ $('.tab-del').hover(function() {
 		'display' : 'none'
 	})
 })
-// 删除确认框-弹出
-$('.tab-del').on('click', function() {
-	$(this).parents('.tab-state').siblings('.del-check').css({
-		'display' : 'block'
-	})
-})
-// 删除确认框-悬停效果
-$('.del-check div').hover(function() {
-	$(this).css({
-		'width' : '90px',
-		'height' : '29px',
-		'border' : '0',
-		'box-shadow' : '#dedede 0px 0px 1px 1px',
-		'color' : '#fff',
-		'background' : '#2ed771'
-	})
-}, function() {
-	$(this).css({
-		'width' : '88px',
-		'height' : '27px',
-		'border' : '1px solid #b4b4b4',
-		'box-shadow' : 'none',
-		'color' : '#6a6868',
-		'background' : '#fff'
-	})
-})
-// 确定删除
-$('.del-yes').on('click',function(){
-	$(this).parents('tr').remove();
-});
-// 取消删除
-$('.del-no').on('click', function() {
-	$(this).parents('.del-check').stop(true).fadeOut(50);
-})
