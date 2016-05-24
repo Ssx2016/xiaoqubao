@@ -1,11 +1,10 @@
 @charset "UTF-8";
-/* 添加数据 */
+/* 要上传的数据 */
 .app-upload {
 	width: 843px;
-	height: 230px;
-	margin-bottom: 18px;
-	padding: 25px 0 0 35px;
+	padding: 25px 0 44px 35px;
 	border: 1px solid #ddd;
+	margin-bottom: 18px;
 }
 /* 上传照片 */
 .upload-img span {
@@ -14,26 +13,46 @@
 	line-height: 20px;
 }
 .upload-img div {
+	position: relative;
 	float: left;
 	width: 198px;
-	height: 96px;
+	height: 93px;
 	border: 1px dotted #c3c3c3;
-	background: url("../images/upload-img.png") center center no-repeat;
+}
+.upload-img img {
+	float: left;
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	width: 180px;
+	height: 77px;
+}
+.fileimg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 198px;
+	height: 93px;
+	opacity: 0;
+	cursor: pointer;
+	z-index: 1;
 }
 /* 发布时间 */
 .upload-time {
 	float: left;
+	height: 30px;
 	margin: 19px 0 22px 7px;
 }
 .inlab {
+	width: 98px;
 	margin-right: 11px;
 }
 .inbox {
 	float: left;
-	margin-right: 71px;
+	margin-right: 70px;
 }
 .intex {
-	width: 184px;
+	width: 186px;
 	color: #000;
 }
 /* 链接类型 */
@@ -57,7 +76,7 @@
 	height: 14px;
 	color: #67add1;
 	text-decoration: underline;
-	background: url("../images/link-style.png") right center no-repeat;
+	background: url("../images/app-link.png") right center no-repeat;
 	cursor: pointer;
 }
 /* 链接类型下拉框 */
@@ -85,133 +104,172 @@
 .common-btn {
 	margin-top: 0;
 }
-/* APP启动图表格 */
-.app-table table {
-	width: 880px;
-	margin-top: 69px;
-	text-align: center;
+/* 表格 */
+.common-tab {
+	margin-top: 52px;
 }
-.app-table table th {
-	border: 1px solid #e1e1e1;
-	text-align: center;
-	line-height: 39px;
+.common-tab table td {
+	border: 1px solid #dcdedf;
 }
-.app-table table td {
-	overflow: hidden;
-	padding: 0 20px;
-	border: 1px solid #e1e1e1;
-}
-.app-table table img {
+.common-tab table img {
 	display: block;
-	width: 106px;
-	height: 86px;
-	margin: 11px auto;
+	width: 104px;
+	height: 84px;
 	border: 2px solid #bfbfbf;
 }
-/* APP列表操作 */
-.app-state {
+.common-tab table p {
+	overflow: hidden;
+	width: 163px;
+	height: 14px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 14px;
+}
+.tab-operate {
+	position: relative;
+}
+.td-1 {
+	z-index: 9;
+}
+.td-2 {
+	z-index: 8;	
+}
+.td-3 {
+	z-index: 7;	
+}
+.td-4 {
+	z-index: 6;
+}
+.td-5 {
+	z-index: 5;
+}
+/* 表格操作 */
+.tab-state {
+	position: relative;
 	width: 103px;
 	height: 29px;
 	margin: 0 auto;
+	text-align: center;
+	line-height: 29px;
+	z-index: 9;
 }
-/* 已发布 */
-.app-state span {
+.tab-state span {
 	float: left;
 	overflow: hidden;
 	width: 42px;
 	height: 29px;
-	line-height: 29px;
 }
-/* APP删除 */
-.app-del {
+.tab-del {
 	float: right;
 	position: relative;
 	width: 21px;
 	height: 29px;
 	background: url("../images/appdel-1.png") center center no-repeat;
 	cursor: pointer;
+	z-index: 20;
 }
-.app-del div {
+.tab-del em {
 	display: none;
 	position: absolute;
-	left: 0;
+	left: -15px;
 	bottom: 35px;
 	width: 50px;
 	height: 28px;
-	margin-left: -15px;
 	line-height: 22px;
 	color: #fff;
-	background: url("../images/app-del.png") 0 center no-repeat;
-	cursor: pointer;
+	background: url("../images/del.png") center center no-repeat;
 }
 /* 删除确认框 */
 .del-check {
 	display: none;
 	position: absolute;
-	top: 0;
-	right: 5.9%;
-	width: 243px;
-	height: 128px;
-	padding-left: 21px;
-	background: url("../images/del-check.png") 0 0 no-repeat;
+	top: 86px;
+	left: -5px;
+	_left: -9px;
+	width: 223px;
+	height: 94px;
+	padding: 34px 0 0 20px;
+	color: #6a6868;
+	background: url("../images/del-check.png") center center no-repeat;
+	z-index: 220;
 }
 .del-check span {
 	float: left;
 	overflow: hidden;
 	width: 199px;
 	height: 14px;
-	margin: 35px 0 24px 0 ;
-	color: #6a6868;
+	margin-bottom: 24px;
+	text-align: left;
 	line-height: 14px;
 }
 .del-check div {
 	float: left;
-	width: 89px;
-	height: 28px;
+	width: 88px;
+	height: 27px;
 	margin-right: 19px;
 	border: 1px solid #b4b4b4;
-
-	color: #6a6868;
-	text-align: center;
 	line-height: 28px;
 	cursor: pointer;
 }
-/* 跳转页面 */
-.page-num {
-	float: right;
-	display: inline;
-	width: 230px;
-	height: 30px;
-	margin-top: 18px;
-	color: #292f35;
-	line-height: 30px;
-	font-size: 16px;
+/* 自定义链接 */
+.custom-link {
+	display: none;
+	position: absolute;
+	top: 49%;
+	left: 29%;
+	width: 560px;
+	height: 135px;
+	border: 1px solid #e0e0e0;
+	-webkit-box-shadow: #e3e3e3 0px 0px 2px 2px;
+	-moz-box-shadow: #e3e3e3 0px 0px 2px 2px;
+	box-shadow: #e3e3e3 0px 0px 2px 2px;
 }
-/* 下一页 */
-.next-page {
-	float: left;
-	width: 68px;
-	height: 30px;
-	margin-right: 10px;
-	padding-left: 10px;
-	background: url("../images/nextpage.png") right 0 no-repeat;
+.custom-link .common-hidtit {
+	width: 520px;
 }
-/* 跳转 */
-.Jump-page {
-	float: left;
-	width: 142px;
+.custom-con {
+	width: 530px;
+	height: 62px;
+	padding: 25px 0 0 27px;
+	color: #494949;
+	background: #fff;
 }
-.Jump-page input {
-	float: left;
-	width: 76px;
-	height: 26px;
-	margin-right: 8px;
+.custom-con .inlab {
+	margin-right: 0;
+	font-weight: bold;
 }
-.Jump-page div {
-	float: right;
-	width: 52px;
+.custom-con .intex {
+	width: 275px;
+}
+/* 话题列表 */
+.topic-link {
+	display: none;
+	position: absolute;
+	top: 45%;
+	left: 25%;
+	width: 899px;
+	border: 1px solid #e0e0e0;
+	-webkit-box-shadow: #e3e3e3 0px 0px 2px 2px;
+	-moz-box-shadow: #e3e3e3 0px 0px 2px 2px;
+	box-shadow: #e3e3e3 0px 0px 2px 2px;
+	z-index: 10;
+}
+.topic-con {
+	width: 829px;
+	height: 680px;
+	padding: 22px 35px;
+	background: #fff;
+}
+.topic-con .common-tab table {
+    width: 829px;
+    margin-top: -30px;
+}
+.topic-con .common-tab table img {
+	width: 55px;
+	height: 55px;
+	border: 0;
+}
+.topic-con .common-tab table p {
+	width: 128px;
 	height: 28px;
-	border: 1px solid #e1e1e1;
-	text-align: center;
-	cursor: pointer;
 }

@@ -1,20 +1,33 @@
-// 链接类型效果
+// // 上传照片
+// var thisTime = new Date();
+// var textTime = thisTime.getTime();
+// var fileimg = document.getElementById("fileimg");
+// var upimg = document.getElementById("upimg");
+
+// $('.upload-time .intex').eq(0).val(textTime);
+// fileimg.addEventListener('change', function(e) {
+//     upimg.src = window.URL.createObjectURL(this.files[0]);
+//     upimg.onload = function() {
+//         window.URL.revokeObjectURL(this.src);
+//     }
+// })
+// 链接类型下拉框效果
 var target = true;
-$('.app-link span').on('click', function() {
+$('.link-style span').on('click', function() {
 	if (target) {
-		$('.applink-style').css({
+		$('.style-select').css({
 			'display' : 'block'
 		})
 		target = false;
 	} else {
-		$('.applink-style').css({
+		$('.style-select').css({
 			'display' : 'none'
 		})
 		target = true;
 	}
 })
 // 链接类型hover效果
-$('.applink-style li').hover(function() {
+$('.style-select li').hover(function() {
 	$(this).css({
 		'background' : '#4b9bff',
 		'color' : '#fff'
@@ -25,84 +38,82 @@ $('.applink-style li').hover(function() {
 		'color' : '#3a424a'
 	})
 })
-// 自定义链接
-$('.link-custom').on('click', function() {
-	$('.applink-style').css({
-		'display' : 'none'
-	})
-	$('.custom').css({
+// 自定义链接-弹窗效果
+$('.style-custom').on('click', function() {
+	$('.custom-link').css({
 		'display' : 'block'
 	})
-})
-$('.custom-tit div').on('click', function() {
-	$('.custom').css({
+	$('.style-select').css({
 		'display' : 'none'
 	})
 })
-// 话题
-$('.topic').on('click', function() {
-	$('.applink-style').css({
+$('.common-hidtit').children('div').on('click', function() {
+	$('.custom-link').css({
 		'display' : 'none'
 	})
-	$('.app-topic').css({
+	target = true;
+})
+// 话题-弹窗效果
+$('.style-topic').on('click', function() {
+	$('.topic-link').css({
 		'display' : 'block'
 	})
-})
-$('.topic-tit div').on('click', function() {
-	$('.app-topic').css({
+	$('.style-select').css({
 		'display' : 'none'
 	})
 })
-// 发布按钮-悬停
-$('.btn-release').hover(function() {
+$('.common-hidtit').children('div').on('click', function() {
+	$('.topic-link').css({
+		'display' : 'none'
+	})
+})
+// 删除-悬停效果
+$('.tab-del').hover(function() {
 	$(this).css({
-		'background' : '#27c164'
+		'background' : 'url("../images/appdel-2.png") center center no-repeat'
+	})
+	$(this).children('em').css({
+		'display' : 'block'
 	})
 }, function() {
 	$(this).css({
+		'background' : 'url("../images/appdel-1.png") center center no-repeat'
+	})
+	$(this).children('em').css({
+		'display' : 'none'
+	})
+})
+// 删除确认框-弹出
+$('.tab-del').on('click', function() {
+	$(this).parents('.tab-state').siblings('.del-check').css({
+		'display' : 'block'
+	})
+})
+// 删除确认框-悬停效果
+$('.del-check div').hover(function() {
+	$(this).css({
+		'width' : '90px',
+		'height' : '29px',
+		'border' : '0',
+		'box-shadow' : '#dedede 0px 0px 1px 1px',
+		'color' : '#fff',
 		'background' : '#2ed771'
 	})
-})
-// 垃圾桶删除效果
-$('.app-del').hover(function() {
-	$(this).css({
-		'background' : 'url("../images/appdel-2.png") center 0 no-repeat'
-	})
-	$(this).children('div').css({
-		'display' : 'block'
-	})
 }, function() {
 	$(this).css({
-		'background' : 'url("../images/appdel-1.png") center 0 no-repeat'
-	})
-	$(this).children('div').css({
-		'display' : 'none'
-	})
-})
-// 删除确认框
-$('.app-del').on('click', function(e) {
-	var boxTop = e.clientY;
-	// var boxLeft = e.clientX;
-	console.log(boxTop);
-	console.log(boxLeft);
-	$('.del-check').css({
-		'display' : 'block',
-		// 'left' : (boxLeft - 110) + 'px',
-		'top' : (boxTop + 225) + 'px'
+		'width' : '88px',
+		'height' : '27px',
+		'border' : '1px solid #b4b4b4',
+		'box-shadow' : 'none',
+		'color' : '#6a6868',
+		'background' : '#fff'
 	})
 })
-// 自定义类型拖拽-原生
-var custom = document.getElementById('custom');
-var newX = 0,
-	newY = 0;
-custom.onmousedown = function(e) {
-	document.onmousemove = function(e) {
-		newX = e.clientX;
-		newY = e.clientY;
-		custom.style.left = (newX - custom.offsetWidth / 2) + 'px';
-		custom.style.top = (newY - custom.offsetHeight / 4) + 'px';
-	}
-}
-document.onmouseup = function() {
-	document.onmousemove = null;
-}
+// 确定删除
+$('.del-yes').on('click',function(){
+	$(this).parents('tr').remove();
+});
+// 取消删除
+$('.del-no').on('click', function() {
+	$(this).parents('.del-check').stop(true).fadeOut(50);
+})
