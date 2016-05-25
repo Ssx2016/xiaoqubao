@@ -40,6 +40,7 @@ $('.button').click(function() {
 	var username = $('#username').val();
 	var password = $('#password').val();
 	if (username == 'a27922780' && password == '123456') {
+		console.log('111');
 		window.location.href = 'bg-page.html';
 	} else {
 		$('.landing p').css({
